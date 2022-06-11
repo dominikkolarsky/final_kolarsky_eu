@@ -1,0 +1,17 @@
+{
+  "name": "www_manage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./custom.css -o ./main.css -w",
+    "watch": "tailwindcss -i ./custom.css -o ./main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
+
