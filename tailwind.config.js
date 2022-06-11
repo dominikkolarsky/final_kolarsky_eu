@@ -8,8 +8,6 @@ module.exports = {
         'theme': '#1d4ed8',
         'secondary': '#999999',
 
-        'input-border': '#565666',
-        'input': '#2A2A35',
         'apps': '#ffffff1c'
       },
       fontFamily: {

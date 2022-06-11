@@ -3,7 +3,7 @@ const navbar = document.getElementById('menu')
 
 
 document.onclick = function (e) {
-	if (e.target.className =='menu-link p-2 px-32 my-2 text-secondary') {
+	if (e.target.className =='menu-link p-2 px-32 my-2 text-secondary z-20') {
 		toggle.classList.remove('open')
 		navbar.classList.remove('flex')
 		navbar.classList.add('hidden')
