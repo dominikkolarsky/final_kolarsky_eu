@@ -32,7 +32,7 @@ nav {
 }
 
 .section-paragraph {
-    @apply text-secondary my-4 w-full max-w-3xl xl:text-sm 2xl:text-xl;
+    @apply text-secondary my-4 w-full max-w-3xl xl:text-base 2xl:text-xl;
 }
 
 
