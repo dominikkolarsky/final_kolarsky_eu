@@ -18,6 +18,9 @@ nav {
 .-z-1 {
     z-index: -1;
 }
+.header-title {
+  @apply text-5xl lg:text-6xl;
+}
 
 .secondary-title {
     @apply text-3xl font-bold lg:text-5xl;
@@ -29,7 +32,7 @@ nav {
 }
 
 .section-paragraph {
-    @apply text-secondary my-4 w-full max-w-3xl xl:text-xl 2xl:text-2xl;
+    @apply text-secondary my-4 w-full max-w-3xl xl:text-sm 2xl:text-xl;
 }
 
 
