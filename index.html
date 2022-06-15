@@ -16,7 +16,7 @@
 <body class=" text-white font-poppins pb-4">
 
     <!-- Navbar -->
-    <nav id="navbar" class="z-50 w-full fixed top-0 left=0 right=0 bg-black/30 md:bg-mobile-menu/60">
+    <nav id="navbar" class="z-50 w-full fixed top-0 left=0 right=0 bg-black/30 md:bg-white/[1%]">
         <!-- Flex container -->
         <div id="navbar-container" class="container mx-auto flex items-center justify-between p-5 backdrop-blur-md xl:text-xl">
 
@@ -25,13 +25,14 @@
                 <a href="#">&lt;kolarsky.dom&gt;</a>
             </div>
             <!-- Menu Items -->
-            <div class="hidden space-x-6 items-center md:flex md:space-x-7">
+            <div class="hidden space-x-6 items-center md:flex md:space-x-7 text-white/80">
                 <a href="#" class="hover:text-theme">home</a>
                 <a href="#about" class="hover:text-theme">about</a>
                 <a href="#skills" class="hover:text-theme">skills</a>
                 <a href="#portfolio" class="hover:text-theme">portfolio</a>
                 <a href="#contact" class="hover:text-theme">contact</a>
-                <a href="KOLARSKY-CV-EN-2022.pdf" target="_blank"><button class="px-4 py-1 rounded-lg bg-gradient-to-r from-theme to-blue-900 hover:from-blue-900 hover:to-theme hover:text-black">resume</button></a>
+
+                <a href="KOLARSKY-CV-EN-2022.pdf" target="_blank" class=" hover:text-theme"><button class="px-2 rounded-none border-[1px] border-white/50 hover:border-theme">resume</button></a>
             </div>
 
             <!-- Hamburger Icon -->
@@ -44,7 +45,7 @@
 
         <!-- Mobile Menu -->
         <div class="md:hidden">
-            <div id="menu" class="bg-mobile-menu  h-screen text-xl flex-col items-center hidden self-end py-3 font-bold  sm:w-auto sm:self-center">
+            <div id="menu" class="bg-mobile-menu h-screen text-xl flex-col items-center hidden self-end py-3 font-bold sm:w-auto sm:self-center">
                 <a href="#" class="menu-link p-2 px-32 my-2 text-secondary z-20">home</a>
                 <a href="#about" class="menu-link p-2 px-32 my-2 text-secondary z-20">about</a>
                 <a href="#skills" class="menu-link p-2 px-32 my-2 text-secondary z-20">skills</a>
@@ -58,44 +59,51 @@
     </nav>
 
     <!--HERO -->
-    <header class="container w-full mt-24 mx-auto px-8 md:px-14 md:mb-64 overflow-hidden">
+    <header class="container w-full mt-24 mx-auto px-8 md:px-14 md:mb-24 lg:mb-40 lg:mt-36 xl:mt-32 xl:mb-64 2xl:mb-72 2xl:mt-44 overflow-hidden">
         <!-- HERO -->
-        <div class="flex flex-col md:items-start">
+        <div class="flex flex-col lg:items-start md:mt-20">
             <div class="flex flex-row mb-4 justify-center">
                 <h2 class="text-xl lg:text-2xl text-secondary">Hi there, I'm Dom</h2><img src="img/hi.png" alt="hi" class="ml-2 mt-1 h-6 w-6">
             </div>
-            <span class="font-extrabold header-title text-center ">Full&#8209;stack developer</span>
-            <span class="font-extrabold header-title text-center">&amp;&nbsp;Problem solver</span>
-            <h2 class="text-xl lg:text-2xl text-secondary mt-3 text-center">You&nbsp;will&nbsp;love.</h2>
+            
+            <span class="font-extrabold header-title text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-theme">Full&#8209;stack developer</span>
+            <span class="font-extrabold header-title text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-theme">&amp;&nbsp;Problem solver</span>
+            <!-- <h2 class="text-xl lg:text-2xl text-secondary mt-3 text-center">You&nbsp;will&nbsp;love.</h2> -->
+            <h2 class="text-center lg:text-left text-lg text-secondary mt-3 lg:w-[560px] 2xl:w-[690px] md:px-12 lg:px-0">
+                I'm a Junior software developer with a desire to be a better version of myself everyday. I am looking for a job where I could extend my career and show my personality.</h2>
             <a href="#contact">
-                <div class="flex justify-center md:justify-start">
-                    <button class="px-7 py-3 rounded-lg bg-gradient-to-r from-theme to-blue-900 hover:from-blue-900 hover:to-theme hover:text-black text-white font-bold mt-8 flex items-center space-x-3">
-                        <span>Get in touch</span>
-                    </button>
+                <div class="flex justify-center lg:justify-start mt-8 md:mt-12">
+                    <div class="p-1 bg-gradient-to-tr from-theme to-blue-900 hover:from-blue-900 hover:to-theme rounded-sm text-xl">
+                        <button class="px-12 py-3 rounded-none bg-[#141414] text-white font-medium flex items-center hover:text-theme">
+                            <span>Get in touch</span>
+                        </button>
+                    </div>
                 </div>
             </a>
         </div>
         <!-- IMAGE -->
-        <img src="img/vektor_dk.png" alt="dom" class="w-full mt-8 mx-auto md:hidden -z-1">
+        <img src="img/vektor_dk.png" alt="dom" class="w-full mt-8 md:mt-12 md:w-1/2 mx-auto lg:hidden -z-1">
 
-        <img src="img/vektor_dk.png" alt="dom" class="hidden md:block w-1/2 mt-8 mx-auto -z-1 absolute -right-10 top-12">
+        <div class="hidden overflow-hidden lg:block lg:absolute -z-1 left-0 top-0 w-full h-[800px] 2xl:h-[1000px]">
+            <img src="img/vektor_dk.png" alt="dom" class="w-1/2 translate-y-[40%] translate-x-[110%] xl:translate-y-[20%] xl:translate-x-[90%] 2xl:w-2/5 2xl:translate-y-[30%] 2xl:translate-x-[130%]">
+        </div>
 
     </header>
 
     <!-- ABOUT -->
     <div id="about" class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:mt-18 lg:mt-32 w-full">
         <section class="w-full">
-            <h2 class="secondary-title mb-5">My, Myself and I</h2>
-            <div class="flex flex-col">
+            <h2 class="secondary-title mb-5 lg:mb-10">My, Myself and I</h2>
+            <div class="flex flex-col ">
                 <div class="flex flex-col md:text-justify">
                     <!-- <h3 class="secondary-title3">About me</h3> -->
-                    <p class="section-paragraph">
-                        I'm a Junior software developer with a desire to be a better version of myself everyday. I am looking for a job where I could extend my career and show my personality.</p>
+                    <!-- <p class="section-paragraph">
+                        I'm a Junior software developer with a desire to be a better version of myself everyday. I am looking for a job where I could extend my career and show my personality.</p> -->
                     <p class="section-paragraph">
                         Currently I'm studying Object oriented programming and www application programming at Technical university of Ostrava (CZ). In addition to that I study courses at ITnetwork, Udemy and FreeCodeCamp. Also try to get tricks from every YouTube developer out there. There are a lot of them...</p>
                 </div>
                 <!-- container pro carousel a hobbies/facts -->
-                <div class="flex flex-col my-5 md:flex-row">
+                <div class="flex flex-col my-5 md:flex-row lg:my-8">
                     <!-- CAROUSEL -->
                     <div id="indicators-carousel" class="shrink relative rounded-lg h-[400px] w-[300px] md:h-[500px] md:w-[375px] shadow-md self-center" data-carousel="static">
                         <!-- Carousel wrapper -->
@@ -148,11 +156,11 @@
                         </button>
                     </div>
                     <!-- hobbies -->
-                    <div class="flex flex-col mt-10 md:mt-0 md:ml-10">
+                    <div class="flex flex-col mt-10 md:mt-0 md:ml-10 xl:ml-20 2xl:ml-36 2xl:mr-0 lg:mt-6 xl:mt-12">
                         <h3 class="secondary-title3">Hobbies</h3>
                         <p class="section-paragraph md:text-justify">
-                            When I am not pushing pixels, you'll find me cooking, choking people for fun (purple belt in Brazilian Jiu Jitsu) meditating, traveling or watching videos about building container houses.</p>
-                        <h3 class="secondary-title3 my-4">Random facts</h3>
+                            When I am not pushing pixels, you'll find me cooking, choking people for fun (I am purple belt in Brazilian Jiu Jitsu), meditating, traveling or watching videos about building container houses.</p>
+                        <h3 class="secondary-title3 my-4 lg:mt-10">Random facts</h3>
                         <p class="section-span">
                             &#8226; I drink a lot of tea</p>
                         <p class="section-span">
@@ -162,21 +170,17 @@
                         <p class="section-span">
                             &#8226; I believe there is always some good</p>
                     </div>
-
-
                 </div>
-
             </div>
-
         </section>
     </div>
 
     <!-- My skills -->
     <div id="skills" class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:mt-18 lg:mt-32 w-full">
         <section class="w-full">
-            <h2 class="secondary-title">My Skills &amp; Tools </h2>
-            <p class="section-paragraph">Here is my set of weapons I use to make things happen. Not all are mentioned as I am also ex&#8209;developer/designer in engineering industry. Proficiency ranges from excellent to absolutely awful.</p>
-            <div class="flex flex-row flex-wrap pt-6 items-center justify-center xl:justify-start 2xl:scroll-pr-16">
+            <h2 class="secondary-title mb-5 lg:mb-10">My Skills &amp; Tools </h2>
+            <p class="section-paragraph">Here is my set of weapons I use to make things happen. Not all are mentioned as I am also an ex&#8209;developer/designer in the engineering industry. Proficiency ranges from excellent to absolutely awful.</p>
+            <div class="flex flex-row flex-wrap items-center justify-center xl:justify-start 2xl:pr-16">
                 <!-- react -->
                 <div class="p-4 rounded-lg m-2 w-[120px] h-[120px] bg-apps flex items-end justify-center">
                     <div>
@@ -1252,10 +1256,10 @@
     <!-- My portfolio -->
     <div id="portfolio" class="lg:container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:mt-18 lg:mt-32 w-full">
         <section class="w-full">
-            <h2 class="secondary-title">My portfolio</h2>
+            <h2 class="secondary-title mb-5 lg:mb-10">My portfolio</h2>
             <p class="section-paragraph">Some of my recent work that I've done in various programming languages.</p>
             <!-- projects -->
-            <div class="flex flex-wrap justify-center xl:justify-start">
+            <div class="flex flex-wrap justify-center xl:justify-start mt-4">
                 <!-- project 1 -->
                 <div class="max-w-[276px] bg-white/5 rounded-lg shadow-lg m-2 2xl:m-5">
 
@@ -1272,7 +1276,6 @@
                             <span class="text-xs font-semibold m-0.5 px-2.5 py-0.5 rounded bg-orange-400 text-gray-800">#HTML</span>
                             <span class="text-xs font-semibold m-0.5 px-2.5 py-0.5 rounded bg-sky-500 text-gray-800">#CSS</span>
                             <span class="text-xs font-semibold m-0.5 px-2.5 py-0.5 rounded bg-purple-600 text-gray-800">#Bootstrap</span>
-
                         </div>
                         <p class="mb-5 font-normal text-secondary text-justify">
                             An exam (8 hours limit) to practice Bootstrap and custom design.
@@ -1513,7 +1516,15 @@
                         <label for="message" class="block mb-2 text-base font-medium text-white">Message</label>
                         <textarea id="message" rows="8" class="block p-2.5 w-full text-sm text-gray-900 bg-apps rounded-lg border border-mobile-menu focus:ring-blue-500 focus:border-blue-500" placeholder="Leave a message..."></textarea>
                     </div>
-                    <button type="submit" class="px-6 py-2 rounded-md bg-gradient-to-r from-theme to-blue-900 hover:from-blue-900 hover:to-theme hover:text-black text-white font-bold">Send it</button>
+                    <!-- <button type="submit" class="px-6 py-2 rounded-md bg-gradient-to-r from-theme to-blue-800 hover:from-blue-900 hover:to-theme hover:text-black text-white font-bold">Send it</button> -->
+                    <div class="flex justify-center lg:justify-start mt-8 md:mt-12">
+                        <div class="p-1 bg-gradient-to-tr from-theme to-blue-900 hover:from-blue-900 hover:to-theme rounded-sm text-xl">
+                            <button type="submit" class="px-10 py-2 rounded-none bg-[#262626] text-white font-medium flex items-center hover:text-theme">
+                                <span>Send&nbsp;it</span>
+                            </button>
+                        </div> 
+                    </div>
+                    <span class="ml-1 text-red-600">Form is out of work. Please, use email instead.</span>
                 </form>
 
                 <div class="mt-6">
@@ -1564,8 +1575,9 @@
             </div>
         </section>
     </div>
+
     <!-- footer -->
-    <div class="container border-t-[1px] border-t-secondary flex flex-col-reverse justify-center items-center mx-auto pt-4 md:flex-row md:justify-between md:px-14 w-full">
+    <div class="container border-t-[1px] border-t-secondary flex flex-col-reverse justify-center items-center mx-auto pt-4 md:flex-row md:justify-between md:px-14 w-full xl:mt-12">
         <span class="text-secondary my-4 w-full max-w-3xl text-center">&copy; 2022 Dominik Kolarský</span>
         <div class=" text-secondary my-4 w-full max-w-3xl justify-center space-x-3 items-center flex md:space-x-7">
             <a href="#" class="hover:text-apps">home</a>

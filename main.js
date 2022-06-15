@@ -10,7 +10,6 @@ document.onclick = function (e) {
 	}
 }
 
-
 // toogle hamburger
 toggle.onclick = function () {
 	toggle.classList.toggle('open')
