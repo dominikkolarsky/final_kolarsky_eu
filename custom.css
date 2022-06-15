@@ -31,10 +31,19 @@ nav {
     @apply block w-12 h-2 bg-theme rounded-full mb-1;
 }
 
+
+
 .section-paragraph {
-    @apply text-secondary my-4 w-full max-w-3xl xl:text-base 2xl:text-xl;
+    @apply text-secondary my-4 w-full max-w-full lg:text-lg 2xl:text-xl;
 }
 
+.secondary-title3 {
+  @apply text-xl font-medium lg:text-2xl 2xl:text-2xl;
+}
+
+.section-span {
+  @apply text-secondary my-1 w-full lg:text-lg 2xl:text-xl;
+}
 
 
 /* pro spravbe ztobrazenisekce */
